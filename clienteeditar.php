@@ -18,9 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($nombreapellido != null || $domicilio != null || $telefono != null || $localidad != null) {
         settype($telefono, "integer");
 
-        $sql = $pdo->prepare("INSERT INTO clientes (id, nombreyapellido, domicilio, telefono, localidad) VALUES (:id ,:nombreyapellido, :domicilio, :telefono, :localidad);");
+        $sql = $pdo->prepare("UPDATE clientes SET nombreyapellido = :nombreyapellido, domicilio = :domicilio, telefono = :telefono, localidad = :localidad");
         $sql->execute([
-            ':id' => null,
             ':nombreyapellido' => $nombreapellido,
             ':domicilio' => $domicilio,
             ':telefono' => $telefono,

@@ -23,16 +23,16 @@
             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" class="login">
                 
                 <label for="usuario">Nombre/Apellido</label>
-                <input type="text" id="usuario" name="descripcion" placeholder="..." value="<?php echo $res['nombreyapellido']; ?>">
+                <input type="text" id="usuario" name="nombreapellido" placeholder="..." value="<?php echo $res['nombreyapellido']; ?>">
 
                 <label for="password">Domicilio</label>
-                <input type="text" id="usuario" name="proveedor" placeholder="..." value="<?php echo $res['domicilio']; ?>">
+                <input type="text" id="usuario" name="domicilio" placeholder="..." value="<?php echo $res['domicilio']; ?>">
 
                 <label for="usuario">Telefono</label>
-                <input type="text" id="usuario" name="compra" placeholder="..." value="<?php echo $res['telefono']; ?>">
+                <input type="text" id="usuario" name="telefono" placeholder="..." value="<?php echo $res['telefono']; ?>">
 
                 <label for="password">Localidad</label>
-                <input type="text" id="usuario" name="venta" placeholder="..." value="<?php echo $res['localidad']; ?>">
+                <input type="text" id="usuario" name="localidad" placeholder="..." value="<?php echo $res['localidad']; ?>">
                 
                 <input type="submit" value="Añadir Cliente"><br><br>
                 <a href="clientesadmin.php">Volver atras</a><br>
